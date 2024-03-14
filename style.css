@@ -12,6 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 19px;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-1 { 
@@ -26,7 +28,13 @@ body {
     margin-left: auto; 
 }
 
-img {
+.section-2 p {
+    margin-right: 10px;
+    margin-left: 14px;
+    max-width: 85%
+}
+
+.section-2 .blur { 
     margin-right: 10px;
     margin-left: 2px;
     padding-right: 10px;
@@ -34,7 +42,9 @@ img {
     max-width: 90%;
     max-height: 80%;
     z-index: -1;
-    filter: blur(0px);
+    top: -40px;
+    left: -50px;
+    filter: blur(30px);
 }
 
 .image-container {
@@ -43,8 +53,8 @@ img {
 
 .text-div {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
+    top: 46%; 
+    left: 46%; 
     transform: translate(-50%, -50%); 
     background-color: black;
     min-width: 20px;
@@ -60,14 +70,8 @@ img {
 .image-container .text-div .loading-text { 
     position: absolute;
     margin-top: 32%;
-    margin-left: 19%;
+    margin-left: 28%;
     font-size: 20px;
-}
-
-.section-2 p {
-    margin-right: 10px;
-    margin-left: 14px;
-    max-width: 85%
 }
 
 figcaption { 
